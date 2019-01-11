@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">Spray Monitor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_search">Search</string>
+    <string name="action_delete">DELETE</string>
+    <string name="action_sync">Sync</string>
+    <string name="action_save">SAVE</string>
+    <string name="action_send">Send</string>
+    <string name="title_activity_information_detail">InformationDetail</string>
+    <string name="title_activity_detail">Details</string>
+    <string name="title_activity_product_detail">Details</string>
+    <string name="title_activity_detail_second">Details</string>
+    <string name="title_activity_existing_forms">Existing Forms</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="title_activity_show_form_details">Form Details</string>
+    <string name="toast_crash">SprayMonitor app has crashed</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="permission_camera_rationale">We need to use camera to run this app</string>
+    <string name="permission_available_camera">Available</string>
+    <string name="permissions_not_granted">Granted</string>
+
+    <string name="permission_Location_rationale">We need to use location to run this app</string>
+    <string name="permission_available_gps">Available</string>
+
+    <string name="permission_read_phone_state_rationale">We need to use phone state to run this app</string>
+    <string name="permission_available_read_phone_state">Available</string>
+
+    <string name="permission_write_external_storage">We need to use external storage to run this app</string>
+
+
+    <string-array name="array_payment_status">
+        <item>ON SPOT</item>
+        <item>LATER</item>
+    </string-array>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_language">Language</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>45 min</item>
+        <item>never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hours</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </string-array>
+
+    <string name="language_pref_key">language_pref_key</string>
+    <string name="pref_title_language_caption">Subtitle Language</string>
+    <string-array name="pref_language_caption_titles">
+        <item>English</item>
+        <item>Hindi</item>
+    </string-array>
+    <string-array name="pref_language_caption_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+
+
+
+
+
+    <string name="pref_title_video_transmission">Video Transmission</string>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_register_farmer">New Farmer</string>
+    <string name="title_activity_main">Home</string>
+    <string name="title_activity_tabed">Forms</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_performance">Performance</string>
+    <string name="title_activity_feul_manager">Fuel Manager</string>
+
+    <string name="title_activity_spray_one">Spray Detail</string>
+    <string name="title_activity_spray_two">Tank-Wise Detail</string>
+    <string name="title_activity_spray_three">Spray Detail</string>
+
+    <string name="action_next">Next</string>
+
+    <string name="network_problem">Network Problem</string>
+
+
+    <!--Text Label-->
+    <!--form one text labels-->
+    <string name="farmer_contact_txt">Farmer Contact</string>
+    <string name="machine_name_txt">Machine Name</string>
+    <string name="image_txt">Image</string>
+    <string name="crop_txt">Crop</string>
+    <string name="acre_txt">Acre</string>
+    <string name="volume_txt">Volume</string>
+    <string name="total_acre_of_farmer_txt">Total Acreage of the farmer</string>
+    <string name="farmer_with_product_txt">Farmer with product</string>
+
+    <!--form two text labels-->
+    <string name="actual_acre_covered_txt">Actual Acre Covered</string>
+    <string name="mixture_preparation_txt">Mixture Preparation</string>
+    <string name="mixture_preparation_instruction_txt">(Please do not record more then 10 sec video clip)</string>
+    <string name="covered_acre_txt">Covered Acre</string>
+    <string name="machine_start_time">Machine Start Time</string>
+    <string name="machine_stop_time">Machine Stop Time</string>
+    <string name="product_instruction">(You can add up to 5 products)</string>
+    <string name="product_name_txt">Product Name</string>
+    <string name="product_qty_txt">Product Qty</string>
+    <string name="product_uom_txt">Product UOM</string>
+
+    <string name="actual_acre_covered_txt_hindi">वास्तविक एकड़ कवर</string>
+    <string name="covered_acre_txt_hindi">एकड़ कवर</string>
+
+    <!--form two text labels-->
+    <string name="actual_acre_covered_of_crop_txt">Actual Acre Covered of Selected Crop</string>
+    <string name="payment_detail_txt">Payment Detail</string>
+    <string name="amount_receivable_txt">Amount Receivable in Rs</string>
+    <string name="amount_collected_txt">Amount Collected in Rs</string>
+    <string name="balance_amount_txt">Balance Amount</string>
+    <string name="to_be_collected_by_txt">To Be Collected By</string>
+    <string name="remark_txt">Remark</string>
+
+
+    <!--registration text labels-->
+    <string name="farmer_first_name_txt">Farmer First Name</string>
+    <string name="farmer_last_name_txt">Farmer Last Name</string>
+    <string name="state_txt">State</string>
+    <string name="district_txt">District</string>
+    <string name="tehsil_txt">Tehsil</string>
+    <string name="village_txt">Village</string>
+    <string name="address_txt">Address</string>
+
+    <!--registration text labels-->
+    <string name="fuel_detail_txt">Fuel Detail</string>
+    <string name="date_txt">Date</string>
+    <string name="machine_id_txt">Machine ID</string>
+    <string name="diesel_level_in_morning_txt">Diesel Level in Morning(Litre)</string>
+    <string name="diesel_level_in_evening_txt">Diesel Level in Evening(Litre)</string>
+    <string name="fuel_consumed_txt">Fuel Consumed (Litre)</string>
+    <string name="diesel_filled_txt">Diesel Filled</string>
+    <string name="fuel_filled_instruction_txt">Fuel can be filled up to 3 times</string>
+    <string name="bill_no_txt">Bill No.</string>
+    <string name="bill_amount_txt">Bill Amount (Rs.)</string>
+    <string name="total_diesel_filled_txt">Total Diesel Filled (Litre)</string>
+    <string name="is_tractor_leases_txt">Is Tractor Leased</string>
+    <string name="cost_per_day_txt">Cost Per Day (Rs.)</string>
+
+
+    <!--Payment detail activity labels-->
+    <string name="farmer_name_txt">Farmer Name</string>
+    <string name="total_area_txt">Total Area</string>
+    <string name="actual_are_covered_txt">Actual Covered Acre</string>
+    <string name="collected_amount_txt">Collected Amount</string>
+    <string name="colection_date_txt">Collection Date</string>
+    <string name="receiving_amount_txt">Receiving Amount</string>
+    <string name="receivable_amount_txt">Receivable Amount</string>
+
+</resources>

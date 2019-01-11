@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wrms.spraymonitor"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-sdk tools:overrideLibrary="net.ypresto.androidtranscoder"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.sample.app.WIDGET_PERMISSION" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true">
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".app.NetworkUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".background.PollReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".background.AuthenticateService"
+            android:enabled="true" />
+        <service
+            android:name=".background.Lat_Lon_CellID"
+            android:enabled="true" />
+
+        <activity
+            android:name=".DetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_detail"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".VideoCapture"
+            android:label="Record Video"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".GalleryActivity"
+            android:label="Gallery"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".VideoGalleryActivity"
+            android:label="Gallery"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PlayVideoActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Gallery"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DetailActivitySecond"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_detail_second"
+            android:parentActivityName=".DetailActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ShowFormDetailsActivity"
+            android:label="@string/title_activity_show_form_details"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".app.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegisterFarmerActivity"
+            android:label="@string/title_activity_register_farmer"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TabedActivity"
+            android:label="@string/title_activity_tabed"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PaymentActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PerformanceActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_performance"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fuelmanager.FuelManager"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_feul_manager"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SavedFuelActivity"
+            android:label="Fuel Details"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DetailActivityThird"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".DetailActivitySecond"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SprayDetailOneActivity"
+            android:label="@string/title_activity_spray_one"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".TabedActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SprayDetailTwoActivity"
+            android:label="@string/title_activity_spray_two"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".SprayDetailOneActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SprayDetailThreeActivity"
+            android:label="@string/title_activity_spray_three"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".SprayDetailTwoActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".background.LocationPollReceiver"
+            />
+
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

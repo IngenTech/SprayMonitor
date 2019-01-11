@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/weightMargin"
+    android:paddingLeft="@dimen/weightMargin"
+    android:paddingRight="@dimen/weightMargin"
+    android:paddingTop="@dimen/weightMargin"
+    tools:context="com.wrms.spraymonitor.PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layout_background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/titleTagText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/payment_detail_txt"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/color_primary"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:background="@drawable/design_layouts1">
+
+            <TextView
+                android:id="@+id/farmerNameTagText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/farmer_name_txt"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/farmerNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ram Aadhar"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:background="@drawable/design_layouts1">
+
+            <TextView
+                android:id="@+id/farmerContactTagText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/farmer_contact_txt"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/farmerContactTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9795990090"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:background="@drawable/design_layouts1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crop Name"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/cropNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capsicum"
+                android:layout_weight="1"/>
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            android:background="@drawable/design_layouts1">
+
+            <TextView
+                android:id="@+id/areaOfCropTagText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/total_area_txt"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/areaOfCropTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23 Acre"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:background="@drawable/design_layouts1">
+
+            <TextView
+                android:id="@+id/actualAcreCoveredTagText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/actual_are_covered_txt"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/actualAcreCoveredTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9 Acre"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:background="@drawable/design_layouts1">
+
+            <TextView
+                android:id="@+id/receivableAmountTagText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/receivable_amount_txt"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/receivableAmountTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="795 -/"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:background="@drawable/design_layouts1">
+
+            <TextView
+                android:id="@+id/balanceAmountTagText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_amount_txt"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/balanceAmountTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="795 -/"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:background="@drawable/design_layouts1">
+
+            <TextView
+                android:id="@+id/collectedAmountTagText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/collected_amount_txt"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/collectedDateTagText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/colection_date_txt"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/collectedPaymentLinearLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:background="@drawable/design_layouts1">
+
+            <TextView
+                android:id="@+id/receivingAmountTagText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/receiving_amount_txt"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/receivingAmountEdt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:background="@drawable/design_layouts1"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <Button
+            android:id="@+id/payNowButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAY NOW"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background"/>
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

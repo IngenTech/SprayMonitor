@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="60dp"
+    android:layout_width="match_parent"
+    android:minHeight="60dp"
+    android:elevation="1dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@color/color_primary">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoGallary"
+        android:textSize="12sp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        android:text="VIDEOS"/>
+
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,544 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.wrms.spraymonitor.DetailActivitySecond">
+
+    <!--<include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/weightMargin"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_background"
+                android:orientation="vertical"
+                android:padding="@dimen/cardChildPadding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mixture Preparation"
+                            android:textSize="@dimen/textSize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="(Please do not record more than 10 sec video clip) "
+                            android:textColor="@color/color_primary"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/mixturePreprationVid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/weightMargin"
+                            android:background="@drawable/button_background"
+                            android:src="@drawable/ic_action_video" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/mixturePreprationGal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/weightMargin"
+                            android:background="@drawable/button_background"
+                            android:src="@drawable/ic_action_play" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/confirmedProductLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/weightMargin"
+                android:background="@drawable/layout_background"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/cardChildPadding"
+                android:paddingRight="@dimen/cardChildPadding" />
+
+            <Button
+                android:id="@+id/addProductButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/button_background"
+                android:drawableLeft="@drawable/ic_action_new"
+                android:text="Add Product"
+                android:textColor="@android:color/white" />
+
+
+            <LinearLayout
+                android:id="@+id/addProductLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/weightMargin"
+                android:background="@drawable/layout_background"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/cardChildPadding"
+                android:paddingRight="@dimen/cardChildPadding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(You can add up to 5 products) "
+                    android:textColor="@color/color_primary"
+                    android:textSize="@dimen/textSize" />
+
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Product Name"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/productName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/design_layouts1" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="Product Qty"
+                            android:textSize="@dimen/textSize"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/productQty"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/design_layouts1"
+                            android:inputType="numberDecimal" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Product UOM"
+                            android:textSize="@dimen/textSize"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/productUOM"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/design_layouts1"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/addProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_background"
+                    android:text="Add Product"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_background"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/cardChildPadding"
+                    android:paddingRight="@dimen/cardChildPadding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="1"
+                        android:text="Total Acreage of the Farmer"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalAcre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="2"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/cardChildPadding"
+                    android:paddingRight="@dimen/cardChildPadding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="1"
+                        android:text="Total Area of Crop Selected"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalAcreOfCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="2"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/cardChildPadding"
+                    android:paddingRight="@dimen/cardChildPadding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="1"
+                        android:text="Acre to be covered of Selected Crop"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/acreCovered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="2"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/cardChildPadding"
+                    android:paddingRight="@dimen/cardChildPadding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="1"
+                        android:text="Actual Acre Covered of Selected Crop"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/actualAcreCovered"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="2"
+                        android:background="@drawable/design_layouts1"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_background"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/cardChildPadding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/weightMargin"
+                    android:layout_weight="1"
+                    android:text="Payment Detail"
+                    android:textColor="@color/color_primary"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/amountReceivableTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="1"
+                        android:text="Amount Receivable in Rs"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/amountReceivableEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="2"
+                        android:background="@drawable/design_layouts1"
+                        android:hint="Rs."
+                        android:enabled="false"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/amountCollectedTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="1"
+                        android:text="Amount Collected in Rs"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/amtCollectedEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="2"
+                        android:background="@drawable/design_layouts1"
+                        android:hint="Rs."
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/balanceTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="1"
+                        android:text="Balance Amount"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/balanceEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="2"
+                        android:background="@drawable/design_layouts1"
+                        android:enabled="false"
+                        android:hint="Rs."
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/collectedByLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="1"
+                        android:text="To Be Collected By"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/amountCollectedBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:layout_weight="2"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/weightMargin"
+                    android:layout_weight="1"
+                    android:text="Remark"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/weightMargin"
+                    android:background="@drawable/design_layouts1"
+                    android:layout_weight="2" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/weightMargin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/privious"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="BACK"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:typeface="monospace" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="#fff"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="NEXT"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

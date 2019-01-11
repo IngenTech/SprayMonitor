@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/sample_main_layout">
+
+    <!--<include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>-->
+
+    <RelativeLayout
+
+        android:id="@+id/relative01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userName"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textColor="@color/color_primary_dark"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/spm_logo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+        <Button
+                android:id="@+id/spray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:text="SPRAY" />
+
+            <Button
+                android:id="@+id/fuelManager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:text="FUEL MANAGER" />
+
+
+
+            <Button
+                android:id="@+id/myActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:text="MY ACTIVITY" />
+
+            <Button
+                android:id="@+id/newFarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:text="FARMER REGISTRATION" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/syncAlert"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="40dp"
+                android:background="@android:color/holo_red_light"
+                android:text="PLEASE SYNCHRONIZE"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

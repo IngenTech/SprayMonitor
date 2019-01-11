@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_primary">#009688</color>
+    <color name="color_primary_dark">#004D40</color>
+    <color name="color_primary_light">#FF18B1A3</color>
+    <color name="color_accent">#70c4bc</color>
+
+    <color name="border_strok">#abacac</color>
+
+    <color name="gradientFirst">#d5efed</color>
+    <color name="gradientSecond">#E0F2F1</color>
+    <color name="gradientThird">#ffffff</color>
+
+    <color name="activity_main_row_title_color">#cccccc</color>
+
+    <color name="textColor">#000000</color>
+    <color name="gray">#bdbdbd</color>
+
+    <color name="fail_status">#fc200c</color>
+    <color name="submit_status">#d7ab1c</color>
+    <color name="save_status">#2aa62c</color>
+
+    <color name="Gray">#ebebeb</color>
+    <color name="White">#FFFFFF</color>
+</resources>

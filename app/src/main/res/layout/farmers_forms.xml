@@ -1,0 +1,25 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/farmer_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/weightMargin"
+        android:paddingLeft="@dimen/weightMargin"
+        android:paddingRight="@dimen/weightMargin"
+        android:paddingTop="@dimen/weightMargin"
+        />
+
+    <TextView
+        android:id="@+id/farmerFormAlert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Form"/>
+
+</FrameLayout>

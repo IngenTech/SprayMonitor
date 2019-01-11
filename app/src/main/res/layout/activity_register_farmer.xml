@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.wrms.spraymonitor.RegisterFarmerActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        android:layout_above="@+id/register_formar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/weightMargin"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/weightMargin"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/cardChildPadding">
+
+                    <TextView
+                        android:id="@+id/farmerContactTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:text="Farmer Contact"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/farmerContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:hint="Farmer Contact"
+                        android:paddingLeft="5dp"
+                        android:imeOptions="actionDone"
+                        android:background="@drawable/design_layouts1"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+
+
+                    <TextView
+                        android:id="@+id/farmerFirstNameTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:text="Farmer First Name"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/design_layouts1"
+                        android:paddingLeft="5dp"
+                        android:inputType="text"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:hint="First Name" />
+
+                    <TextView
+                        android:id="@+id/farmerLastNameTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:text="Farmer Last Name"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/design_layouts1"
+                        android:paddingLeft="5dp"
+                        android:inputType="text"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:hint="Last Name" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/weightMargin"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/cardChildPadding">
+
+
+                    <TextView
+                        android:id="@+id/stateTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:text="State"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/design_layouts1"
+                        android:layout_margin="@dimen/weightMargin" />
+
+
+                    <TextView
+                        android:id="@+id/districtTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:text="District"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/district"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/design_layouts1"
+                        android:layout_margin="@dimen/weightMargin" />
+
+                    <TextView
+                        android:id="@+id/tehsilTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:text="Tehsil"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/tehsil"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/design_layouts1"
+                        android:layout_margin="@dimen/weightMargin" />
+
+
+                    <TextView
+                        android:id="@+id/villageTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:text="Village"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/village"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="text"
+                        android:paddingLeft="5dp"
+                        android:imeOptions="actionDone"
+                        android:background="@drawable/design_layouts1"
+                        android:layout_margin="@dimen/weightMargin" />
+
+
+                    <TextView
+                        android:id="@+id/addressTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/weightMargin"
+                        android:text="Address"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="text"
+                        android:paddingLeft="5dp"
+                        android:background="@drawable/design_layouts1"
+                        android:layout_margin="@dimen/weightMargin" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/register_formar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="ADD"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:typeface="monospace" />
+
+</RelativeLayout>

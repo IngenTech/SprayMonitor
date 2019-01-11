@@ -1,0 +1,25 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/weightMargin"
+    android:paddingLeft="@dimen/weightMargin"
+    android:paddingRight="@dimen/weightMargin"
+    android:paddingTop="@dimen/weightMargin"
+    tools:context="com.wrms.spraymonitor.MothWisePerformanceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/dataContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/layout_background"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</ScrollView>
+
